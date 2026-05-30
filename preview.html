@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CritiSize Preview</title>
+    <style>
+      :root {
+        --bg:#0a0a0f;--surface:#111118;--surfaceHigh:#18181f;--border:#22222e;
+        --accent:#c8f04a;--accentDim:#a8cc3a;--accentGlow:rgba(200,240,74,0.15);
+        --text:#e8e8f0;--muted:#888899;--faint:#333344;
+      }
+      body{margin:0;padding:0;min-height:100vh;background:#0a0a0f;color:#e8e8f0;font-family:'Syne',sans-serif;}
+      .page{padding:6rem 2rem 3rem;max-width:1080px;margin:0 auto;}
+      .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;position:sticky;top:0;background:rgba(10,10,15,.95);border-bottom:1px solid var(--border);}
+      .nav-logo{font-size:1.4rem;font-weight:800;letter-spacing:-.03em;color:var(--text);}
+      .nav-logo span{color:var(--accent);}
+      .nav-links{display:flex;gap:.75rem;align-items:center;}
+      .btn-primary{background:var(--accent);color:#0a0a0f;border:none;padding:.85rem 1.5rem;border-radius:8px;font-weight:700;cursor:pointer;}
+      .hero{padding:4rem 0;text-align:center;}
+      .hero h1{font-size:clamp(3rem,6vw,4.8rem);line-height:1.05;}
+      .hero h1 em{color:var(--accent);font-style:normal;}
+      .hero p{max-width:640px;margin:.75rem auto 0;color:var(--muted);line-height:1.75;}
+      .card-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:3rem;}
+      .feature-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.5rem;}
+      .feature-card h3{margin:.5rem 0;}
+      .footer{margin-top:4rem;color:var(--muted);font-size:.95rem;text-align:center;}
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <div class="nav-logo">Criti<span>Size</span></div>
+        <div class="nav-links">
+          <button class="btn-primary">Get Started</button>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <p style="display:inline-flex;gap:.5rem;background:rgba(200,240,74,.12);border:1px solid rgba(200,240,74,.3);color:var(--accent);padding:.4rem .9rem;border-radius:999px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;">AI-Powered Design Criticism</p>
+        <h1>Your website deserves<br><em>honest feedback</em></h1>
+        <p>CritiSize evaluates your site across 8 design dimensions with ruthlessly constructive AI critique.</p>
+        <div style="margin-top:2rem;"><button class="btn-primary">Preview Demo</button></div>
+      </section>
+
+      <div class="card-row">
+        <div class="feature-card">
+          <div style="font-size:1.5rem;">🎨</div>
+          <h3>Design Language</h3>
+          <p>Evaluates visual hierarchy, aesthetic coherence, and overall design system consistency.</p>
+        </div>
+        <div class="feature-card">
+          <div style="font-size:1.5rem;">📐</div>
+          <h3>Spacing & Layout</h3>
+          <p>Checks padding, margins, alignment, whitespace usage, and grid discipline.</p>
+        </div>
+        <div class="feature-card">
+          <div style="font-size:1.5rem;">🌈</div>
+          <h3>Color Palette</h3>
+          <p>Analyzes contrast ratios, color harmony, emotional resonance, and brand alignment.</p>
+        </div>
+      </div>
+
+      <div class="footer">Open this file in your browser to preview the design style.</div>
+    </div>
+  </body>
+</html>
