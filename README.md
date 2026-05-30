@@ -20,5 +20,6 @@ A Vite + React demo app for CritiSize, your website design critic.
 ## Notes
 
 - The app uses the Claude API (`https://api.anthropic.com/v1/messages`).
-- Add your Anthropiс API key in `.env` to make the evaluation features work.
+- Add your Anthropic API key in `.env` to make the evaluation features work.
 - The current project is a plain React + Vite app, ready to open in VS Code.
+
